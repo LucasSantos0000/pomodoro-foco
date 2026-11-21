@@ -2,7 +2,7 @@
 
 Aplicação web single-user para organizar ciclos de estudo com a técnica Pomodoro. Ela tem temporizadores personalizados, sessões que continuam depois que o navegador é fechado e um painel lateral de tarefas. Tudo roda no navegador e os dados ficam salvos em `localStorage`.
 
-Trabalho da disciplina de Engenharia de Software, IFNMG, Campus Montes Claros.
+Trabalho da disciplina de Dev Web, IFNMG, Campus Montes Claros.
 
 | Desktop | Celular |
 |---|---|
