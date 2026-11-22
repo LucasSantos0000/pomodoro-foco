@@ -43,16 +43,9 @@ Para testar no celular durante o desenvolvimento, use `npm run dev -- --host` e 
 
 ## Deploy no Netlify
 
-Aplicação publicada em: **https://SEU-SITE.netlify.app** _(atualizar com o endereço final)_
+Aplicação publicada em: **https://stellular-eclair-e82bf1.netlify.app**
 
 O arquivo `netlify.toml` já configura o build (`npm run build`) e a pasta publicada (`dist`).
-
-**Opção recomendada (deploy contínuo pelo GitHub):**
-1. No Netlify, clique em **Add new site → Import an existing project → GitHub** e escolha este repositório.
-2. As configurações são lidas do `netlify.toml`. Clique em **Deploy**.
-3. A cada `git push` na branch principal, o site é atualizado automaticamente.
-
-**Opção manual:** rode `npm run build` e arraste a pasta `dist/` para https://app.netlify.com/drop.
 
 ---
 
@@ -159,8 +152,6 @@ Pontos em que o documento era ambíguo ou contraditório, e a decisão tomada:
 | **Edinei Lucas Silva Souza** | Temporizadores personalizados (validação, CRUD, formulário e lista); tarefas (validação, ordenação e painel lateral); componentes de interface compartilhados (modal, confirmação, notificações); layout responsivo, acessibilidade e estilos; testes de presets e tarefas | `src/domain/presets.ts`, `src/domain/tarefas.ts`, `src/hooks/usePresets.ts`, `src/hooks/useTarefas.ts`, `src/components/ListaPresets.tsx`, `FormularioPreset.tsx`, `PainelTarefas.tsx`, `FormularioTarefa.tsx`, `Modal.tsx`, `Confirmacao.tsx`, `Notificacoes.tsx`, `CampoFormulario.tsx`, `src/App.tsx`, `src/estilos.css`, `tests/presets-tarefas.test.ts` |
 
 ### Boas práticas adotadas
-- **Commits pequenos e por funcionalidade**, cada um feito pelo integrante responsável pela parte.
-- **Commits semânticos** (`feat:`, `fix:`, `test:`, `docs:`, `refactor:`).
 - **TypeScript estrito** (`strict`, `noUnusedLocals`, `noUnusedParameters`).
 - **Testes automatizados** das regras de negócio críticas (RN-03 a RN-08, RN-10, RN-12, validações).
 - **Rastreabilidade:** comentários no código citam os identificadores do documento (RF, RN, UC, VR, RNF).
